@@ -385,7 +385,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.43
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1372,6 +1372,8 @@ GameObject:
   - component: {fileID: 81448069447763775}
   - component: {fileID: 114657889582494035}
   - component: {fileID: 114103970395224663}
+  - component: {fileID: 124991111629186106}
+  - component: {fileID: 124991111629186107}
   m_Layer: 0
   m_Name: First Person Camera
   m_TagString: MainCamera
@@ -1701,6 +1703,48 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593728717127345}
   m_Enabled: 1
+--- !u!114 &124991111629186106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593728717127345}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e087d76b2bd6d4477b7cf380f8f208ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DMmat: {fileID: 0}
+--- !u!114 &124991111629186107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593728717127345}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fedc9c35d33c9544bd5239e7958d571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sha: {fileID: 4800000, guid: 99d80d0fdb7c6724c89e77d81bbc026a, type: 3}
+  mat: {fileID: 0}
+  flatLut: {fileID: 2800000, guid: da23966b994a6224287512dde61eb48c, type: 3}
+  bayerTexture: {fileID: 2800000, guid: eac7505667530464e91debe0b4a8492b, type: 3}
+  ColorBleed: 0
+  LinesMult: 1.091
+  ColorShift: -0.23
+  newScreenSize: {x: 1920, y: 1080}
+  screenStretching: {x: 6, y: 6}
+  CustomScreenSize: 1
+  AspectRatioBars: 1
+  OneBitColor: 0
+  VerticalLines: 0
+  HorizontalLines: 0
+  Dithering: 1
+  Paletting: 1
+  clearNextUpdate: 0
 --- !u!136 &136877098079602071
 CapsuleCollider:
   m_ObjectHideFlags: 0
