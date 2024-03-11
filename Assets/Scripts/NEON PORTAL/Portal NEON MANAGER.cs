@@ -7,6 +7,10 @@ public class PortalNEONManager : MonoBehaviour
     public GameObject kal;
     public GameObject kal1;
 
+   
+
+    
+
     public bool IsOpentp = false;
 
     // Start is called before the first frame update
@@ -24,12 +28,15 @@ public class PortalNEONManager : MonoBehaviour
         {
             kal.SetActive(true);
             kal1.SetActive(true);
+         
         }
         else
         {
             kal.SetActive(false);
             kal1.SetActive(false);
+            
         }
 
+      
     }
 }

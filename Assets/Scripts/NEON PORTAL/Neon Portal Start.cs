@@ -8,6 +8,8 @@ public class NeonPortaltp : MonoBehaviour
 
     public PortalNEONManager pmm;
 
+
+
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -15,6 +17,7 @@ public class NeonPortaltp : MonoBehaviour
             other.transform.position = destinationPortal.position;
             pmm.IsOpentp = false;
         }
+        
     }
     
 

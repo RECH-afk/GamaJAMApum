@@ -14,7 +14,7 @@ public class EndPortal : MonoBehaviour
         if (other.tag == "Player")
         {
             pm.IsStart = false;
-            StartCoroutine(ResetWait());
+            dm.Reset();
         }
     }
 
@@ -23,12 +23,7 @@ public class EndPortal : MonoBehaviour
 
     
 
-    IEnumerator ResetWait()
-    {
-        dm.entropy *= 2 * Time.deltaTime;
-        yield return new WaitForSeconds(1);
-        Debug.Log("ДУРА БЛЯТЬ ВРУБАЙСЯ УËБА НАХУЙ Z");
-       
-        dm.Reset();
-    }
+   
+   
+ 
 }

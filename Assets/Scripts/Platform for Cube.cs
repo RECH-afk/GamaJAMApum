@@ -18,13 +18,5 @@ public class PlatformforCube : MonoBehaviour
             Door.SetActive(false);
         }
     }
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Cube")
-        {
-            Door.SetActive(true);
-        }
-
-
-    }
+  
 }

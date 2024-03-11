@@ -1,8 +1,12 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class DragRigidbody : MonoBehaviour
 {
+
+
+
     public float force = 600;
 	public float damping = 6;
 	public float distance = 15;
@@ -12,10 +16,12 @@ public class DragRigidbody : MonoBehaviour
 
 	void OnMouseDown ()
 	{
-		HandleInputBegin (Input.mousePosition);
+
+
+        HandleInputBegin (Input.mousePosition);
 	}
 	
-	void OnMouseUp ()
+	public void OnMouseUp ()
 	{
 		HandleInputEnd (Input.mousePosition);
 	}
@@ -50,7 +56,8 @@ public class DragRigidbody : MonoBehaviour
 	
 	public void HandleInputEnd (Vector3 screenPosition)
 	{
-        Destroy (jointTrans.gameObject);
+		
+		Destroy (jointTrans.gameObject);
 	}
 	
 	Transform AttachJoint (Rigidbody rb, Vector3 attachmentPosition)
@@ -91,5 +98,10 @@ public class DragRigidbody : MonoBehaviour
 			return;
 		}
 
+    }
+
+    internal void HandleInputEnd()
+    {
+        throw new NotImplementedException();
     }
 }
