@@ -28,6 +28,10 @@ public class MenuManager : MonoBehaviour
         OptionWindow.SetActive(false);
         CreditWindow.SetActive(true);
     }
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
     public void ButtonExitToMenu()
     {
         MenuWindow.SetActive(true);
